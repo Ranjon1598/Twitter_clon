@@ -1,0 +1,30 @@
+.contant{
+	display: none;
+	width: 135.5px;
+	background: #699;
+	position: absolute;
+	
+}
+.contant a{
+	display: block;
+	padding: 12px 15px;	
+	text-decoration: none;
+	color: #ffff;
+}
+nav{
+	background: lime;
+}
+.nav-link{
+	padding: 12px 15px;
+	/*background: lime;*/
+	border-right: 1px solid #663
+}
+
+.dropdown:hover .contant{
+	display: block;
+}
+
+
+#g{
+	padding-top: 47px!important;
+}

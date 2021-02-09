@@ -1,0 +1,115 @@
+.content{
+    .content_img1{
+        background-image: url(img/pexels-photo-146067.jpeg);
+    }
+    .content_img2{
+        background-image: url(img/pexels-photo-302304.jpeg);
+    }
+    .content_img3{
+        background-image: url(img/pexels-photo-247502.jpeg);
+    }
+    .content_img4{
+        background-image: url(img/pexels-photo-414090.jpeg);
+    }
+
+    .content_img{
+        width: 100%;
+        height: 230px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        &:hover .content_hover{
+            display: block;
+        }
+        .content_hover{
+            display: none;
+            .portfoliio_icon{
+                color: #ffffff;
+                margin: 0px 8px;
+                margin-top: 40%;
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+                background: rgb(36, 226, 19);
+                &:hover{
+                    background: red;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio{
+    .portfolio_img{
+        border: 2px solid #d0a772;
+        border-radius: 0px;
+        text-align: center;
+        margin: 10px;
+        z-index: 1;
+        position: relative;
+        img{
+            width: 100%;
+            height: 232px;
+            
+        }
+    
+        &:after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #d0a772;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: -1; 
+            transform: translateY(-50%) scaleX(0.3);
+            transition: all 0.3s ease 0s;
+
+        }
+
+        &:after{
+            width: 106%;
+            left: 50%;
+            transform: translate(-50%, -50%) scaleY(0.25);
+        }
+
+
+        &:before{  
+             content: "";
+            width: 100%;
+            height: 104%;
+            background: #d0a772;
+            position: absolute;
+            top: 50%;
+            left: 0;
+             z-index: -1; 
+            transform: translateY(-50%) scaleX(0.3);
+            transition: all 0.3s ease 0s;
+        }
+
+        &:hover &:before{
+            transform: translateY(-50%) scaleX(0.7);
+        }
+        &:hover &:after{
+            transform: translate(-50%, -50%) scaleY(0.7); 
+        }
+
+
+
+
+
+
+    }
+}
